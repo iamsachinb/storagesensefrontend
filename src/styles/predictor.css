@@ -1,0 +1,80 @@
+/* src/styles/predictor.css */
+
+/* 60-30-10 Design Rule */
+:root {
+  --primary-color: #f4f7fc; /* 60% background */
+  --secondary-color: #e2e8f0; /* 30% secondary elements */
+  --accent-color: #3182ce; /* 10% accent for highlights */
+  --hover-color: #225eab; /* Hover color for buttons */
+  --hover-bg-color: #dae4f0; /* Hover effect for inputs */
+  --hover-text-color: #34495e; /* Hover text color for buttons */
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--primary-color);
+}
+
+.predictor-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ecf0f1; /* 60% Light background */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  color: #34495e; /* 30% Darker text */
+}
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50; /* Dark blue for emphasis */
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.predictor-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-group input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #bdc3c7; /* Light gray border */
+  border-radius: 5px;
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: var(--accent-color); /* Border color when focused */
+  background-color: var(--hover-bg-color); /* Background color when focused */
+}
+
+.predict-btn {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.predict-btn:hover {
+  background-color: var(--hover-color);
+  color: var(--hover-text-color);
+}
+
+.result {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #2c3e50; /* Dark blue for emphasis */
+}

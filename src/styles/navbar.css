@@ -1,0 +1,33 @@
+/* src/styles/navbar.css */
+
+nav {
+  background-color: #34495e;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  transition: background-color 0.3s ease;
+}
+
+nav:hover {
+  background-color: #3182ce; /* Accent color */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f4f7fc; /* Light background color */
+}
